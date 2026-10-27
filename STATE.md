@@ -1,14 +1,14 @@
 # 执行断点
 
-- 项目阶段：已在独立个人目录解压；音频提取回归已通过，项目运行时安装中。
-- 当前任务：T01。
+- 项目阶段：T01 完成；真实权重下载中；T03 工程事务实现与回归完成。
+- 当前任务：T02（下载真实模型）；并行准备不依赖下载的 T03 工程路径。
 - 当前状态：RUNNING（仅表示当前会话正在执行）。
-- 最近有效提交：尚无项目提交。
+- 最近有效提交：58ef2f9，启动包/音频提取/冻结评测样本。
 - GitHub目标：Xiangyu2141480/voicetrail；gh api user 已返回目标账户；首选仓库未找到。
-- 最近通过的验证：临时隔离 Python 3.9 环境执行音频回归，4 passed；npm install 后 audit 0 vulnerabilities。
-- 未验证：Python 3.11 正式环境、真实模型、检索质量、持久索引、UI、发布。
-- 阻塞：无外部阻塞；Python 3.11 的 uv 管理运行时正在下载。
-- 下一条动作：完成 Python 3.11 项目环境并运行相同音频回归，然后执行 T02。
+- 最近通过的验证：Python 3.11 正式环境：media/search/embedding contract 8 passed；indexer 5 passed；前端 audit 0 vulnerabilities。
+- 未验证：真实模型、检索质量、真实持久索引、UI、发布。
+- 阻塞：无外部阻塞。uv 运行时下载过慢，已取消并改用 Homebrew Python 3.11.18，项目依赖仍只在 .venv。
+- 下一条动作：检查真实模型 smoke 结果，运行冻结评测与离线重启，继续 T04 API 和 T05 导出。
 
 ## 每次结束前更新
 

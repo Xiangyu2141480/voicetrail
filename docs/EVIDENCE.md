@@ -6,9 +6,9 @@
 
 - OS/架构：macOS 26.5.1 / ARM64
 - CPU/RAM：Apple M5 Pro / 48 GiB
-- Python/Node/FFmpeg：系统 Python 3.9.6；项目 Python 3.11 安装中；Node 24.21.0、npm 11.19.0、FFmpeg 9.0.2
-- 模型repo/revision/许可/预处理版本：未检查
-- 设备后端：未检查
+- Python/Node/FFmpeg：项目 Python 3.11.18（Homebrew）/.venv；Node 24.21.0、npm 11.19.0、FFmpeg 9.0.2
+- 模型repo/revision/许可/预处理版本：SpeechBrain spkrec-ecapa-voxceleb / 0f99f2d0ebe89ac095bcc5903c4dd8f72b367286 / 模型卡 Apache-2.0 / pcm16k-vad2-window10-hop5-v1
+- 设备后端：设计 CPU/4 threads，真实模型运行结果待记录
 
 ## 检查记录
 
@@ -17,6 +17,8 @@
 | 2026-10-27/T01 | `.bootstrap/bin/python -m pytest tests/test_media.py -q`（实现前） | 可控正弦/无音轨/损坏文件 | exit 2，缺 media 模块，符合缺失能力 | tests/test_media.py | 临时 Python 3.9 |
 | 2026-10-27/T01 | 相同命令（实现后） | 16k mono、2s 切片、中文空格路径、损坏/无音轨 | exit 0，4 passed | backend/app/media.py | 待正式 Python 3.11 重跑 |
 | 2026-10-27/T01 | `npm install` / `npm audit --json` | 前端依赖 | 安装后 0 vulnerabilities；初选 Vite 有漏洞，改为 7.3.7 | frontend/package-lock.json | 还未构建 UI |
+| 2026-10-27/T01–T02 | `.venv/bin/python -m pytest tests/test_media.py tests/test_search.py tests/test_embedding_contract.py -q` | FFmpeg 音频/隔离向量/静音 | exit 0，8 passed | tests / uv.lock | 正式 Python 3.11；不代表真实声音质量 |
+| 2026-10-27/T03 | `.venv/bin/python -m pytest tests/test_indexer.py -q` | 测试专用模型/可控信号 | exit 0，5 passed | tests/test_indexer.py | 验证事务，真实索引待验收 |
 
 ## 真实声音检索
 
