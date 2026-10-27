@@ -1,0 +1,2031 @@
+{
+  "scope": "Complete uv/npm locks including platform variants; source-only release. Primary labels do not replace bundled third-party notices.",
+  "python": [
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/annotated-types/0.8.0/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "annotated_types-0.8.0.dist-info/licenses/LICENSE",
+          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/annotated-types.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/anyio/4.15.1/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "anyio-4.15.1.dist-info/licenses/LICENSE",
+          "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/anyio.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/certifi/2026.10.23/",
+      "license": "MPL-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "certifi-2026.10.23.dist-info/licenses/LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/certifi.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/cffi/2.1.1/",
+      "license": "MIT-0",
+      "license_files": [
+        {
+          "path_in_distribution": "cffi-2.1.1.dist-info/licenses/LICENSE",
+          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/cffi.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/charset-normalizer/3.5.2/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+          "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/charset-normalizer.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/click/8.5.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "click-8.5.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/click.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/cloudpickle/3.1.2/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "cloudpickle-3.1.2.dist-info/licenses/LICENSE",
+          "sha256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/cloudpickle.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/colorama/0.4.6/",
+      "license": "BSD-3-Clause",
+      "verification": "Upstream PyPI metadata; Windows-only dependency"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.119.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/fastapi/0.119.1/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "fastapi-0.119.1.dist-info/licenses/LICENSE",
+          "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/fastapi.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "filelock",
+      "version": "4.2.4",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/filelock/4.2.4/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "filelock-4.2.4.dist-info/licenses/LICENSE",
+          "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/filelock.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/fsspec/2026.9.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "fsspec-2026.9.0.dist-info/licenses/LICENSE",
+          "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/fsspec.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/h11/0.16.0/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/h11.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/hf-xet/1.7.0/",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "hf_xet-1.7.0.dist-info/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/hf-xet.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/httpcore/1.0.9/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+          "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/httpcore.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/httpx/0.28.1/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/httpx.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/huggingface-hub/0.36.0/",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "huggingface_hub-0.36.0.dist-info/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/huggingface-hub.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "hyperpyyaml",
+      "version": "1.2.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/hyperpyyaml/1.2.3/",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "hyperpyyaml-1.2.3.dist-info/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/hyperpyyaml.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/idna/3.20/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "idna-3.20.dist-info/licenses/LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/idna.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/iniconfig/2.3.1/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "iniconfig-2.3.1.dist-info/licenses/LICENSE",
+          "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/iniconfig.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/jinja2/3.1.6/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "jinja2-3.1.6.dist-info/licenses/LICENSE.txt",
+          "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/jinja2.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/joblib/1.6.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "joblib-1.6.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/joblib.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/markupsafe/3.0.4/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "markupsafe-3.0.4.dist-info/licenses/LICENSE.txt",
+          "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/markupsafe.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/mpmath/1.3.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "mpmath-1.3.0.dist-info/LICENSE",
+          "sha256": "c26cae81da4508e5e249985777a33821f183223ebb74d7f8cfbf90fe7eef2fb7"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/mpmath.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/networkx/3.6.1/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "networkx-3.6.1.dist-info/licenses/LICENSE.txt",
+          "sha256": "3cf7c3a179d817b23b8b8568211769fefdf93797d207d984b8b2fa24d0220b33"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/networkx.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/numpy/2.2.6/",
+      "license": "BSD-3-Clause + bundled notices",
+      "license_files": [
+        {
+          "path_in_distribution": "numpy-2.2.6.dist-info/LICENSE.txt",
+          "sha256": "b4ae62887f4dd6e9430b1a8d7017a3ba84c5d7aa630b9d17ed6f25c21b0ec5b4"
+        },
+        {
+          "path_in_distribution": "numpy/_core/include/numpy/random/LICENSE.txt",
+          "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+        },
+        {
+          "path_in_distribution": "numpy/ma/LICENSE",
+          "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+        },
+        {
+          "path_in_distribution": "numpy/random/LICENSE.md",
+          "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/numpy.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/packaging/26.3/",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "packaging-26.3.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+        },
+        {
+          "path_in_distribution": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "path_in_distribution": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/packaging.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pluggy/1.7.0/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "pluggy-1.7.0.dist-info/licenses/LICENSE",
+          "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pluggy.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.12",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pycparser/3.12/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "pycparser-3.12.dist-info/licenses/LICENSE",
+          "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pycparser.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pydantic/2.14.1/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "pydantic-2.14.1.dist-info/licenses/LICENSE",
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pydantic.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pydantic-core/2.50.1/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "pydantic_core-2.50.1.dist-info/licenses/LICENSE",
+          "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pydantic-core.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pygments/2.21.0/",
+      "license": "BSD-2-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "pygments-2.21.0.dist-info/licenses/LICENSE",
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pygments.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pytest/8.4.2/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "pytest-8.4.2.dist-info/licenses/LICENSE",
+          "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pytest.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.20",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/python-multipart/0.0.20/",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "python_multipart-0.0.20.dist-info/licenses/LICENSE.txt",
+          "sha256": "a8e833176cd617daf00b9d6d39fa15ca8edebc6d1643079cd2f4893c0c289be2"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/python-multipart.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/pyyaml/6.0.3/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "pyyaml-6.0.3.dist-info/licenses/LICENSE",
+          "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/pyyaml.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/requests/2.34.2/",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "requests-2.34.2.dist-info/licenses/LICENSE",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        },
+        {
+          "path_in_distribution": "requests-2.34.2.dist-info/licenses/NOTICE",
+          "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/requests.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "ruamel-yaml",
+      "version": "0.18.17",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/ruamel-yaml/0.18.17/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "ruamel_yaml-0.18.17.dist-info/licenses/LICENSE",
+          "sha256": "0ce9ad6a9d4f0829296a72c77d07795dd67f42751e2922be56c051d39ae1c011"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/ruamel-yaml.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "ruamel-yaml-clib",
+      "version": "0.2.15",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/ruamel-yaml-clib/0.2.15/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "ruamel_yaml_clib-0.2.15.dist-info/licenses/LICENSE",
+          "sha256": "f8ad7efe71dde909f2d694f7dc69470d3dbe07c001c0b30c6bd9951e472077fa"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/ruamel-yaml-clib.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "ruff",
+      "version": "0.14.2",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/ruff/0.14.2/",
+      "license": "MIT + bundled notices",
+      "license_files": [
+        {
+          "path_in_distribution": "ruff-0.14.2.dist-info/licenses/LICENSE",
+          "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/ruff.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/scipy/1.17.1/",
+      "license": "BSD-3-Clause + bundled notices",
+      "license_files": [
+        {
+          "path_in_distribution": "scipy-1.17.1.dist-info/LICENSE.txt",
+          "sha256": "60a7d05d729ed5c763852a324a1cb4223d665d4ad3f4b8a0c130ae5c60c93e49"
+        },
+        {
+          "path_in_distribution": "scipy/_lib/_uarray/LICENSE",
+          "sha256": "c80c39b5fce06ba4897e14e0b0a88b54458334d951eb1361402ffad2cfb863b4"
+        },
+        {
+          "path_in_distribution": "scipy/fft/_pocketfft/LICENSE.md",
+          "sha256": "c254b2b5fd30ae3c89d36ba061730563b9760fca04f1b746a1b2c3157da2c789"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/scipy.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "sentencepiece",
+      "version": "0.2.2",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/sentencepiece/0.2.2/",
+      "license": "Apache-2.0",
+      "license_files": [],
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "soundfile",
+      "version": "0.13.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/soundfile/0.13.1/",
+      "license": "BSD-3-Clause + libsndfile LGPL-2.1",
+      "license_files": [
+        {
+          "path_in_distribution": "_soundfile_data/COPYING",
+          "sha256": "ad01ea5cd2755f6048383c8d54c88459cd6fcb17757c5c8892f8c5ea060f6140"
+        },
+        {
+          "path_in_distribution": "soundfile-0.13.1.dist-info/LICENSE",
+          "sha256": "0dd2e411fed553ba891845077e5a32c5b726d1bbc46ff31a2118ae1ccf816752"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/soundfile.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "speechbrain",
+      "version": "1.0.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/speechbrain/1.0.3/",
+      "license": "Apache-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "speechbrain-1.0.3.dist-info/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/speechbrain.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "starlette",
+      "version": "0.48.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/starlette/0.48.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "starlette-0.48.0.dist-info/licenses/LICENSE.md",
+          "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/starlette.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/sympy/1.14.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "sympy-1.14.0.dist-info/licenses/LICENSE",
+          "sha256": "07a5e9819f727b4986ad2829c7a29a6320d42575f720eb24d71b7fef573a0286"
+        },
+        {
+          "path_in_distribution": "sympy/parsing/latex/LICENSE.txt",
+          "sha256": "007bc30a58fa40a996e772047120de4eaf31f5110e4f9c3b5f93fcdfbe2eaca1"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/sympy.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/torch/2.8.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "torch-2.8.0.dist-info/licenses/LICENSE",
+          "sha256": "c0ae8cfa6af6fa041232ce34e3b7f7bf79dae23ab611189f857e015568452263"
+        },
+        {
+          "path_in_distribution": "torch-2.8.0.dist-info/licenses/NOTICE",
+          "sha256": "c2cc7bf0caec7652c2b460a8a470bea1677f241e4ab8e431df34cf17f5a9fec0"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/torch.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0+cpu",
+      "source": {
+        "registry": "https://download.pytorch.org/whl/cpu"
+      },
+      "metadata_url": "https://pypi.org/project/torch/2.8.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "torch-2.8.0.dist-info/licenses/LICENSE",
+          "sha256": "c0ae8cfa6af6fa041232ce34e3b7f7bf79dae23ab611189f857e015568452263"
+        },
+        {
+          "path_in_distribution": "torch-2.8.0.dist-info/licenses/NOTICE",
+          "sha256": "c2cc7bf0caec7652c2b460a8a470bea1677f241e4ab8e431df34cf17f5a9fec0"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/torch.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.8.0",
+      "source": {
+        "registry": "https://download.pytorch.org/whl/cpu"
+      },
+      "metadata_url": "https://pypi.org/project/torchaudio/2.8.0/",
+      "license": "BSD-2-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "torchaudio-2.8.0.dist-info/licenses/LICENSE",
+          "sha256": "93a58861a858cc108e6b6b833e08e76e8b2a66339e4a8007c8a5a8c1ff9c40d6"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/torchaudio.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.8.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/torchaudio/2.8.0/",
+      "license": "BSD-2-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "torchaudio-2.8.0.dist-info/licenses/LICENSE",
+          "sha256": "93a58861a858cc108e6b6b833e08e76e8b2a66339e4a8007c8a5a8c1ff9c40d6"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/torchaudio.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.8.0+cpu",
+      "source": {
+        "registry": "https://download.pytorch.org/whl/cpu"
+      },
+      "metadata_url": "https://pypi.org/project/torchaudio/2.8.0/",
+      "license": "BSD-2-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "torchaudio-2.8.0.dist-info/licenses/LICENSE",
+          "sha256": "93a58861a858cc108e6b6b833e08e76e8b2a66339e4a8007c8a5a8c1ff9c40d6"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/torchaudio.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/tqdm/4.70.1/",
+      "license": "MPL-2.0 AND MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "tqdm-4.70.1.dist-info/licenses/LICENCE",
+          "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/tqdm.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/typing-extensions/4.16.0/",
+      "license": "PSF-2.0",
+      "license_files": [
+        {
+          "path_in_distribution": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/typing-extensions.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/typing-inspection/0.4.4/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "typing_inspection-0.4.4.dist-info/licenses/LICENSE",
+          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/typing-inspection.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/urllib3/2.8.0/",
+      "license": "MIT",
+      "license_files": [
+        {
+          "path_in_distribution": "urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/urllib3.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.38.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/uvicorn/0.38.0/",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        {
+          "path_in_distribution": "uvicorn-0.38.0.dist-info/licenses/LICENSE.md",
+          "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/uvicorn.txt",
+      "verification": "Installed distribution metadata and available license files"
+    },
+    {
+      "name": "webrtcvad-wheels",
+      "version": "2.0.14",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      },
+      "metadata_url": "https://pypi.org/project/webrtcvad-wheels/2.0.14/",
+      "license": "MIT + WebRTC BSD-3",
+      "license_files": [
+        {
+          "path_in_distribution": "webrtcvad_wheels-2.0.14.dist-info/LICENSE",
+          "sha256": "c652961f6c92f978ebe4acea6b8b68d4d2d777bd0a1df130c9deffca12d482cd"
+        }
+      ],
+      "preserved_text": "docs/licenses/python/webrtcvad-wheels.txt",
+      "verification": "Installed distribution metadata and available license files"
+    }
+  ],
+  "npm": [
+    {
+      "name": "@babel/code-frame",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/code-frame",
+      "metadata_url": "https://www.npmjs.com/package/@babel/code-frame",
+      "preserved_text": "docs/licenses/npm/@babel__code-frame.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/compat-data",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/compat-data",
+      "metadata_url": "https://www.npmjs.com/package/@babel/compat-data",
+      "preserved_text": "docs/licenses/npm/@babel__compat-data.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/core",
+      "metadata_url": "https://www.npmjs.com/package/@babel/core",
+      "preserved_text": "docs/licenses/npm/@babel__core.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/generator",
+      "version": "7.29.8",
+      "license": "MIT",
+      "location": "node_modules/@babel/generator",
+      "metadata_url": "https://www.npmjs.com/package/@babel/generator",
+      "preserved_text": "docs/licenses/npm/@babel__generator.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-compilation-targets",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-compilation-targets",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-compilation-targets",
+      "preserved_text": "docs/licenses/npm/@babel__helper-compilation-targets.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-globals",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-globals",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-globals",
+      "preserved_text": "docs/licenses/npm/@babel__helper-globals.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-module-imports",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-module-imports",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-module-imports",
+      "preserved_text": "docs/licenses/npm/@babel__helper-module-imports.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-module-transforms",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-module-transforms",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-module-transforms",
+      "preserved_text": "docs/licenses/npm/@babel__helper-module-transforms.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-plugin-utils",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-plugin-utils",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-plugin-utils",
+      "preserved_text": "docs/licenses/npm/@babel__helper-plugin-utils.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.11",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-string-parser",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-string-parser",
+      "preserved_text": "docs/licenses/npm/@babel__helper-string-parser.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-validator-identifier",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-validator-identifier",
+      "preserved_text": "docs/licenses/npm/@babel__helper-validator-identifier.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helper-validator-option",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/helper-validator-option",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helper-validator-option",
+      "preserved_text": "docs/licenses/npm/@babel__helper-validator-option.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/helpers",
+      "version": "7.29.10",
+      "license": "MIT",
+      "location": "node_modules/@babel/helpers",
+      "metadata_url": "https://www.npmjs.com/package/@babel/helpers",
+      "preserved_text": "docs/licenses/npm/@babel__helpers.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/parser",
+      "version": "7.29.11",
+      "license": "MIT",
+      "location": "node_modules/@babel/parser",
+      "metadata_url": "https://www.npmjs.com/package/@babel/parser",
+      "preserved_text": "docs/licenses/npm/@babel__parser.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/plugin-transform-react-jsx-self",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/plugin-transform-react-jsx-self",
+      "metadata_url": "https://www.npmjs.com/package/@babel/plugin-transform-react-jsx-self",
+      "preserved_text": "docs/licenses/npm/@babel__plugin-transform-react-jsx-self.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/plugin-transform-react-jsx-source",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/plugin-transform-react-jsx-source",
+      "metadata_url": "https://www.npmjs.com/package/@babel/plugin-transform-react-jsx-source",
+      "preserved_text": "docs/licenses/npm/@babel__plugin-transform-react-jsx-source.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/template",
+      "version": "7.29.7",
+      "license": "MIT",
+      "location": "node_modules/@babel/template",
+      "metadata_url": "https://www.npmjs.com/package/@babel/template",
+      "preserved_text": "docs/licenses/npm/@babel__template.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/traverse",
+      "version": "7.29.10",
+      "license": "MIT",
+      "location": "node_modules/@babel/traverse",
+      "metadata_url": "https://www.npmjs.com/package/@babel/traverse",
+      "preserved_text": "docs/licenses/npm/@babel__traverse.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@babel/types",
+      "version": "7.29.11",
+      "license": "MIT",
+      "location": "node_modules/@babel/types",
+      "metadata_url": "https://www.npmjs.com/package/@babel/types",
+      "preserved_text": "docs/licenses/npm/@babel__types.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/aix-ppc64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/aix-ppc64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/android-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/android-arm",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/android-arm",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/android-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/android-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/android-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/android-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/android-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/android-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/darwin-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/darwin-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/darwin-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/darwin-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/darwin-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/freebsd-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/freebsd-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/freebsd-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/freebsd-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-arm",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-arm",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-ia32",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-ia32",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-loong64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-loong64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-loong64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-mips64el",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-mips64el",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-ppc64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-ppc64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-riscv64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-riscv64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-s390x",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-s390x",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-s390x",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/linux-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/linux-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/linux-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/netbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/netbsd-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/netbsd-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/netbsd-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/netbsd-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/openbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/openbsd-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/openbsd-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/openbsd-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/openbsd-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/openharmony-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/openharmony-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/openharmony-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/sunos-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/sunos-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/sunos-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/win32-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/win32-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/win32-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/win32-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/win32-ia32",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/win32-ia32",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@esbuild/win32-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/@esbuild/win32-x64",
+      "metadata_url": "https://www.npmjs.com/package/@esbuild/win32-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "license": "MIT",
+      "location": "node_modules/@jridgewell/gen-mapping",
+      "metadata_url": "https://www.npmjs.com/package/@jridgewell/gen-mapping",
+      "preserved_text": "docs/licenses/npm/@jridgewell__gen-mapping.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@jridgewell/remapping",
+      "version": "2.3.5",
+      "license": "MIT",
+      "location": "node_modules/@jridgewell/remapping",
+      "metadata_url": "https://www.npmjs.com/package/@jridgewell/remapping",
+      "preserved_text": "docs/licenses/npm/@jridgewell__remapping.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "license": "MIT",
+      "location": "node_modules/@jridgewell/resolve-uri",
+      "metadata_url": "https://www.npmjs.com/package/@jridgewell/resolve-uri",
+      "preserved_text": "docs/licenses/npm/@jridgewell__resolve-uri.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT",
+      "location": "node_modules/@jridgewell/sourcemap-codec",
+      "metadata_url": "https://www.npmjs.com/package/@jridgewell/sourcemap-codec",
+      "preserved_text": "docs/licenses/npm/@jridgewell__sourcemap-codec.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "license": "MIT",
+      "location": "node_modules/@jridgewell/trace-mapping",
+      "metadata_url": "https://www.npmjs.com/package/@jridgewell/trace-mapping",
+      "preserved_text": "docs/licenses/npm/@jridgewell__trace-mapping.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@napi-rs/lzma-linux-x64-gnu",
+      "version": "1.5.1",
+      "license": "MIT",
+      "location": "node_modules/@napi-rs/lzma-linux-x64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@napi-rs/lzma-linux-x64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.56.1",
+      "license": "Apache-2.0",
+      "location": "node_modules/@playwright/test",
+      "metadata_url": "https://www.npmjs.com/package/@playwright/test",
+      "preserved_text": "docs/licenses/npm/@playwright__test.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.0-beta.38",
+      "license": "MIT",
+      "location": "node_modules/@rolldown/pluginutils",
+      "metadata_url": "https://www.npmjs.com/package/@rolldown/pluginutils",
+      "preserved_text": "docs/licenses/npm/@rolldown__pluginutils.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-android-arm-eabi",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-android-arm-eabi",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-android-arm-eabi",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-android-arm64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-android-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-android-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-darwin-arm64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-darwin-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-darwin-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-darwin-x64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-darwin-x64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-darwin-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-freebsd-arm64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-freebsd-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-freebsd-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-freebsd-x64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-freebsd-x64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-freebsd-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-arm-gnueabihf",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-arm-gnueabihf",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-arm-gnueabihf",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-arm-musleabihf",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-arm-musleabihf",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-arm-musleabihf",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-arm64-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-arm64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-arm64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-arm64-musl",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-arm64-musl",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-arm64-musl",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-loong64-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-loong64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-loong64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-loong64-musl",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-loong64-musl",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-loong64-musl",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-ppc64-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-ppc64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-ppc64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-ppc64-musl",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-ppc64-musl",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-ppc64-musl",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-riscv64-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-riscv64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-riscv64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-riscv64-musl",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-riscv64-musl",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-riscv64-musl",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-s390x-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-s390x-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-s390x-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-x64-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-x64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-x64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-linux-x64-musl",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-linux-x64-musl",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-linux-x64-musl",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-openbsd-x64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-openbsd-x64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-openbsd-x64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-openharmony-arm64",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-openharmony-arm64",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-openharmony-arm64",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-win32-arm64-msvc",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-win32-arm64-msvc",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-win32-arm64-msvc",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-win32-ia32-msvc",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-win32-ia32-msvc",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-win32-ia32-msvc",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-win32-x64-gnu",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-win32-x64-gnu",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-win32-x64-gnu",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@rollup/rollup-win32-x64-msvc",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/@rollup/rollup-win32-x64-msvc",
+      "metadata_url": "https://www.npmjs.com/package/@rollup/rollup-win32-x64-msvc",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/babel__core",
+      "version": "7.20.5",
+      "license": "MIT",
+      "location": "node_modules/@types/babel__core",
+      "metadata_url": "https://www.npmjs.com/package/@types/babel__core",
+      "preserved_text": "docs/licenses/npm/@types__babel__core.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/babel__generator",
+      "version": "7.27.0",
+      "license": "MIT",
+      "location": "node_modules/@types/babel__generator",
+      "metadata_url": "https://www.npmjs.com/package/@types/babel__generator",
+      "preserved_text": "docs/licenses/npm/@types__babel__generator.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/babel__template",
+      "version": "7.4.4",
+      "license": "MIT",
+      "location": "node_modules/@types/babel__template",
+      "metadata_url": "https://www.npmjs.com/package/@types/babel__template",
+      "preserved_text": "docs/licenses/npm/@types__babel__template.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/babel__traverse",
+      "version": "7.28.0",
+      "license": "MIT",
+      "location": "node_modules/@types/babel__traverse",
+      "metadata_url": "https://www.npmjs.com/package/@types/babel__traverse",
+      "preserved_text": "docs/licenses/npm/@types__babel__traverse.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "license": "MIT",
+      "location": "node_modules/@types/estree",
+      "metadata_url": "https://www.npmjs.com/package/@types/estree",
+      "preserved_text": "docs/licenses/npm/@types__estree.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.2",
+      "license": "MIT",
+      "location": "node_modules/@types/react",
+      "metadata_url": "https://www.npmjs.com/package/@types/react",
+      "preserved_text": "docs/licenses/npm/@types__react.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.2.2",
+      "license": "MIT",
+      "location": "node_modules/@types/react-dom",
+      "metadata_url": "https://www.npmjs.com/package/@types/react-dom",
+      "preserved_text": "docs/licenses/npm/@types__react-dom.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "5.0.4",
+      "license": "MIT",
+      "location": "node_modules/@vitejs/plugin-react",
+      "metadata_url": "https://www.npmjs.com/package/@vitejs/plugin-react",
+      "preserved_text": "docs/licenses/npm/@vitejs__plugin-react.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "version": "2.11.33",
+      "license": "Apache-2.0",
+      "location": "node_modules/baseline-browser-mapping",
+      "metadata_url": "https://www.npmjs.com/package/baseline-browser-mapping",
+      "preserved_text": "docs/licenses/npm/baseline-browser-mapping.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "browserslist",
+      "version": "4.29.5",
+      "license": "MIT",
+      "location": "node_modules/browserslist",
+      "metadata_url": "https://www.npmjs.com/package/browserslist",
+      "preserved_text": "docs/licenses/npm/browserslist.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "caniuse-lite",
+      "version": "1.0.30001819",
+      "license": "CC-BY-4.0",
+      "location": "node_modules/caniuse-lite",
+      "metadata_url": "https://www.npmjs.com/package/caniuse-lite",
+      "preserved_text": "docs/licenses/npm/caniuse-lite.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "convert-source-map",
+      "version": "2.0.0",
+      "license": "MIT",
+      "location": "node_modules/convert-source-map",
+      "metadata_url": "https://www.npmjs.com/package/convert-source-map",
+      "preserved_text": "docs/licenses/npm/convert-source-map.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "license": "MIT",
+      "location": "node_modules/csstype",
+      "metadata_url": "https://www.npmjs.com/package/csstype",
+      "preserved_text": "docs/licenses/npm/csstype.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT",
+      "location": "node_modules/debug",
+      "metadata_url": "https://www.npmjs.com/package/debug",
+      "preserved_text": "docs/licenses/npm/debug.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "electron-to-chromium",
+      "version": "1.5.465",
+      "license": "ISC",
+      "location": "node_modules/electron-to-chromium",
+      "metadata_url": "https://www.npmjs.com/package/electron-to-chromium",
+      "preserved_text": "docs/licenses/npm/electron-to-chromium.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "esbuild",
+      "version": "0.28.2",
+      "license": "MIT",
+      "location": "node_modules/esbuild",
+      "metadata_url": "https://www.npmjs.com/package/esbuild",
+      "preserved_text": "docs/licenses/npm/esbuild.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "escalade",
+      "version": "3.2.0",
+      "license": "MIT",
+      "location": "node_modules/escalade",
+      "metadata_url": "https://www.npmjs.com/package/escalade",
+      "preserved_text": "docs/licenses/npm/escalade.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT",
+      "location": "node_modules/fdir",
+      "metadata_url": "https://www.npmjs.com/package/fdir",
+      "preserved_text": "docs/licenses/npm/fdir.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.2",
+      "license": "MIT",
+      "location": "node_modules/fsevents",
+      "metadata_url": "https://www.npmjs.com/package/fsevents",
+      "preserved_text": "docs/licenses/npm/fsevents.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "license": "MIT",
+      "location": "node_modules/gensync",
+      "metadata_url": "https://www.npmjs.com/package/gensync",
+      "preserved_text": "docs/licenses/npm/gensync.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "license": "MIT",
+      "location": "node_modules/js-tokens",
+      "metadata_url": "https://www.npmjs.com/package/js-tokens",
+      "preserved_text": "docs/licenses/npm/js-tokens.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "jsesc",
+      "version": "3.1.0",
+      "license": "MIT",
+      "location": "node_modules/jsesc",
+      "metadata_url": "https://www.npmjs.com/package/jsesc",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "json5",
+      "version": "2.2.3",
+      "license": "MIT",
+      "location": "node_modules/json5",
+      "metadata_url": "https://www.npmjs.com/package/json5",
+      "preserved_text": "docs/licenses/npm/json5.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "lru-cache",
+      "version": "5.1.1",
+      "license": "ISC",
+      "location": "node_modules/lru-cache",
+      "metadata_url": "https://www.npmjs.com/package/lru-cache",
+      "preserved_text": "docs/licenses/npm/lru-cache.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT",
+      "location": "node_modules/ms",
+      "metadata_url": "https://www.npmjs.com/package/ms",
+      "preserved_text": "docs/licenses/npm/ms.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "license": "MIT",
+      "location": "node_modules/nanoid",
+      "metadata_url": "https://www.npmjs.com/package/nanoid",
+      "preserved_text": "docs/licenses/npm/nanoid.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "node-releases",
+      "version": "2.0.60",
+      "license": "MIT",
+      "location": "node_modules/node-releases",
+      "metadata_url": "https://www.npmjs.com/package/node-releases",
+      "preserved_text": "docs/licenses/npm/node-releases.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "location": "node_modules/picocolors",
+      "metadata_url": "https://www.npmjs.com/package/picocolors",
+      "preserved_text": "docs/licenses/npm/picocolors.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT",
+      "location": "node_modules/picomatch",
+      "metadata_url": "https://www.npmjs.com/package/picomatch",
+      "preserved_text": "docs/licenses/npm/picomatch.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "playwright",
+      "version": "1.56.1",
+      "license": "Apache-2.0",
+      "location": "node_modules/playwright",
+      "metadata_url": "https://www.npmjs.com/package/playwright",
+      "preserved_text": "docs/licenses/npm/playwright.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.56.1",
+      "license": "Apache-2.0",
+      "location": "node_modules/playwright-core",
+      "metadata_url": "https://www.npmjs.com/package/playwright-core",
+      "preserved_text": "docs/licenses/npm/playwright-core.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.32",
+      "license": "MIT",
+      "location": "node_modules/postcss",
+      "metadata_url": "https://www.npmjs.com/package/postcss",
+      "preserved_text": "docs/licenses/npm/postcss.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "react",
+      "version": "19.2.0",
+      "license": "MIT",
+      "location": "node_modules/react",
+      "metadata_url": "https://www.npmjs.com/package/react",
+      "preserved_text": "docs/licenses/npm/react.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.0",
+      "license": "MIT",
+      "location": "node_modules/react-dom",
+      "metadata_url": "https://www.npmjs.com/package/react-dom",
+      "preserved_text": "docs/licenses/npm/react-dom.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "react-refresh",
+      "version": "0.17.0",
+      "license": "MIT",
+      "location": "node_modules/react-refresh",
+      "metadata_url": "https://www.npmjs.com/package/react-refresh",
+      "preserved_text": "docs/licenses/npm/react-refresh.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "rollup",
+      "version": "4.65.1",
+      "license": "MIT",
+      "location": "node_modules/rollup",
+      "metadata_url": "https://www.npmjs.com/package/rollup",
+      "preserved_text": "docs/licenses/npm/rollup.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "scheduler",
+      "version": "0.27.0",
+      "license": "MIT",
+      "location": "node_modules/scheduler",
+      "metadata_url": "https://www.npmjs.com/package/scheduler",
+      "preserved_text": "docs/licenses/npm/scheduler.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "semver",
+      "version": "6.3.1",
+      "license": "ISC",
+      "location": "node_modules/semver",
+      "metadata_url": "https://www.npmjs.com/package/semver",
+      "preserved_text": "docs/licenses/npm/semver.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "license": "BSD-3-Clause",
+      "location": "node_modules/source-map-js",
+      "metadata_url": "https://www.npmjs.com/package/source-map-js",
+      "preserved_text": "docs/licenses/npm/source-map-js.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT",
+      "location": "node_modules/tinyglobby",
+      "metadata_url": "https://www.npmjs.com/package/tinyglobby",
+      "preserved_text": "docs/licenses/npm/tinyglobby.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "location": "node_modules/typescript",
+      "metadata_url": "https://www.npmjs.com/package/typescript",
+      "preserved_text": "docs/licenses/npm/typescript.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "update-browserslist-db",
+      "version": "1.3.4",
+      "license": "MIT",
+      "location": "node_modules/update-browserslist-db",
+      "metadata_url": "https://www.npmjs.com/package/update-browserslist-db",
+      "preserved_text": "docs/licenses/npm/update-browserslist-db.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "vite",
+      "version": "7.3.7",
+      "license": "MIT",
+      "location": "node_modules/vite",
+      "metadata_url": "https://www.npmjs.com/package/vite",
+      "preserved_text": "docs/licenses/npm/vite.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "license": "MIT",
+      "location": "node_modules/vite/node_modules/fsevents",
+      "metadata_url": "https://www.npmjs.com/package/fsevents",
+      "preserved_text": "docs/licenses/npm/fsevents.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    },
+    {
+      "name": "yallist",
+      "version": "3.1.1",
+      "license": "ISC",
+      "location": "node_modules/yallist",
+      "metadata_url": "https://www.npmjs.com/package/yallist",
+      "preserved_text": "docs/licenses/npm/yallist.txt",
+      "verification": "npm lock metadata; available installed upstream notices preserved"
+    }
+  ]
+}
