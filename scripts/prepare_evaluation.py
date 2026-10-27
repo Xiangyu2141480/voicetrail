@@ -2,7 +2,6 @@
 import argparse
 import hashlib
 import json
-import shutil
 import subprocess
 import tarfile
 import urllib.request
@@ -58,19 +57,14 @@ def main():
                     break
         if missing:
             raise SystemExit("Archive did not contain all frozen samples.")
-    library = dataset / "ui-library"
-    library.mkdir(parents=True, exist_ok=True)
     for sample in manifest["samples"]:
         assert valid(dataset / sample["path"], sample), sample["id"]
-        if sample["role"] == "target":
-            shutil.copyfile(dataset / sample["path"], library / f"{sample['id']} 原声.flac")
     # These signals never participate in real speaker-quality evaluation.
     sf.write(dataset / "short-reference.wav", np.zeros(32000), 16000, subtype="PCM_16")
     sf.write(dataset / "silence-reference.wav", np.zeros(80000), 16000, subtype="PCM_16")
-    (library / "损坏 broken.mp4").write_bytes(b"not a media container")
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "lavfi",
                     "-i", "color=c=black:s=64x64:r=10", "-t", "1", "-an", "-c:v", "mpeg4",
-                    str(library / "无音轨 video.mp4")], check=True)
+                    str(dataset / "no-audio-reference.mp4")], check=True)
     print("Frozen real samples and separate UI error fixtures ready.")
 
 

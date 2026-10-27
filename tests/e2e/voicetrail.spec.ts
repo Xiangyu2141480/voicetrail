@@ -1,6 +1,7 @@
 import { test, expect } from '../../frontend/node_modules/@playwright/test/index.mjs';
 import { spawn, spawnSync, type ChildProcess } from 'node:child_process';
-import { readFileSync, mkdirSync, mkdtempSync, symlinkSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { copyFileSync, readFileSync, mkdirSync, mkdtempSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -18,6 +19,19 @@ test('real import, index, reference, search, playback, review, export and restar
   }
   const runtime = mkdtempSync(join(tmpdir(), 'voicetrail-e2e-'));
   mkdirSync(join(runtime, 'models'));
+  // Exact per-run corpus; old fixture directories must not change the frozen gate.
+  const library = join(runtime, 'ui-library');
+  mkdirSync(library);
+  const frozen = JSON.parse(readFileSync(join(project, 'docs/evaluation_manifest.json'), 'utf8'));
+  for (const sample of frozen.samples) {
+    const source = join(evaluation, sample.path);
+    expect(createHash('sha256').update(readFileSync(source)).digest('hex')).toBe(sample.sha256);
+    if (sample.role === 'target') {
+      copyFileSync(source, join(library, `${sample.id} 中文 空格.flac`));
+    }
+  }
+  copyFileSync(join(evaluation, 'no-audio-reference.mp4'), join(library, '无音轨 video.mp4'));
+  writeFileSync(join(library, '损坏 broken.wav'), 'not a media container');
   // Resolve the fixed cache revision through a directory symlink; weights never enter Git.
   const revision = '0f99f2d0ebe89ac095bcc5903c4dd8f72b367286';
   symlinkSync(join(modelCache, revision), join(runtime, 'models', revision), 'dir');
@@ -63,7 +77,7 @@ test('real import, index, reference, search, playback, review, export and restar
 
   try {
     start(); await load();
-    await page.getByLabel('本地文件夹路径', { exact: true }).fill(join(evaluation, 'ui-library'));
+    await page.getByLabel('本地文件夹路径', { exact: true }).fill(library);
     await page.getByRole('button', { name: '添加资料', exact: true }).click();
     await expect(page.getByLabel('已登记资料', { exact: true })).toContainText('ui-library');
 
@@ -94,7 +108,7 @@ test('real import, index, reference, search, playback, review, export and restar
     await expect(page.getByRole('alert')).toContainText('3–60 seconds');
     await page.locator('#reference-file').setInputFiles(join(evaluation, 'silence-reference.wav'));
     await expect(page.getByRole('alert')).toContainText('Insufficient speech');
-    await page.locator('#reference-file').setInputFiles(join(evaluation, 'ui-library/无音轨 video.mp4'));
+    await page.locator('#reference-file').setInputFiles(join(library, '无音轨 video.mp4'));
     await expect(page.getByRole('alert')).toContainText('no audio track');
     report.short_silence_no_audio_errors = true;
 

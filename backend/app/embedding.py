@@ -97,7 +97,12 @@ class EmbeddingModel:
             if self.model is not None:
                 return
             self.cache_dir.mkdir(parents=True, exist_ok=True)
-            self.state, self.error = "downloading", None
+            name = "embedding_model.ckpt"
+            weight_path = self.cache_dir / name
+            self.state = "loading" if weight_path.exists() else "downloading"
+            self.error = None
+            if weight_path.exists():
+                self.downloaded_bytes = self.total_bytes = weight_path.stat().st_size
             try:
                 import torch
                 from huggingface_hub import HfApi, hf_hub_download
@@ -105,10 +110,6 @@ class EmbeddingModel:
                 from speechbrain.lobes.models.ECAPA_TDNN import ECAPA_TDNN
                 from speechbrain.processing.features import InputNormalization
 
-                name = "embedding_model.ckpt"
-                weight_path = self.cache_dir / name
-                if weight_path.exists():
-                    self.state = "loading"
                 if not weight_path.exists():
                     if offline:
                         raise MediaError("Pinned model is not cached; prepare it online first.")

@@ -8,7 +8,7 @@
 - CPU/RAM：Apple M5 Pro / 48 GiB
 - Python/Node/FFmpeg：项目 Python 3.11.18（Homebrew）/.venv；Node 24.21.0、npm 11.19.0、FFmpeg 9.0.2
 - 模型repo/revision/许可/预处理版本：SpeechBrain spkrec-ecapa-voxceleb / 0f99f2d0ebe89ac095bcc5903c4dd8f72b367286 / 模型卡 Apache-2.0 / pcm16k-vad2-window10-hop5-v1
-- 设备后端：设计 CPU/4 threads，真实模型运行结果待记录
+- 设备后端：真实 CPU/4 threads，固定 revision 已通过模型、API 与浏览器验收
 
 ## 检查记录
 
@@ -29,7 +29,7 @@
 - 说话人数、录制次数、语言、噪声和年代：3 位说话人，5 个章节音频片段，英语有声书 clean 子集；录制年代未核验。
 - 参考与检索样本是否不同录制：同人不同 chapter ID，非同一录音复制裁切；独立环境/跨年不成立。
 - 已知匹配、未知负例及人工标注方法：官方 speaker/chapter IDs；2277/2035 为已知，2086 为未知；无人工身份确认。
-- 冻结清单 SHA cbaeeb06e7fcf06dab550a01594abd47079b2d006907158389560f5c07ffd2f1；两查询的全量逐例分数见 retrieval_results.json。2277 正例0.709754，负例0.248479/0.020344；2035 正例0.776059，负例0.143877/0.124603，最低排序门槛通过。这不是泛化准确率，实际分窗 UI 搜索仍待验证。
+- 冻结清单 SHA cbaeeb06e7fcf06dab550a01594abd47079b2d006907158389560f5c07ffd2f1；两查询的全量逐例分数见 retrieval_results.json。2277 正例0.709754，负例0.248479/0.020344；2035 正例0.776059，负例0.143877/0.124603，最低排序门槛通过。这不是泛化准确率；实际分窗 UI 结果另见 api_results.json 和 e2e_results.json。
 - 候选排序、误检、漏检：未验证；未经完整标注不报准确率/召回率。
 - 首次权重83,316,686 bytes（约79.5 MiB），准备70.863s；其他建库性能待实测。
 - 缓存后离线重启：通过，smoke 明确阻断所有 socket 网络连接；本地固定 revision 权重 SHA256 校验后加载。
@@ -51,6 +51,20 @@ React 已接真实 API；`npm run build` exit 0，同时 typecheck 通过。
 ego-lite 0.6.0.12 独立操作生产同源界面：添加目录、索引、上传真人参考、检索、回听、确认、选择、导出下载、解包后在真实浏览器播放 WAV 全部完成；结果 ego_results.json / ego-desktop.png。任务空间验收后已关闭；未升级浏览器。
 
 发现并修复：最初 Playwright 未识别项目外测试文件的 ESM，exit 1；给 tests/e2e 明确 type=module 并指向项目安装的入口后，完整测试通过，未删断言。文件索引最初丢失具体 MediaError，新增“无音轨应显示具体原因”回归实际先失败，再保留安全错误文字修复；indexer 7 passed，随后真实 E2E 再通过。
+
+## 可复现安装与发布检查
+
+2026-10-27/T07：从提交 fc8652a 创建独立干净源码副本，`uv sync --locked --python 3.11` 新建 .venv 并安装 51 个包，`npm ci --prefix frontend` 安装成功且 audit 0 vulnerabilities；`prepare_model --offline` / `prepare_evaluation --offline` 成功。未复用原项目虚拟环境。
+
+首次 `scripts.verify --real`：工程回归 24 passed (6.65s)、ruff/契约/typecheck/build、断网真实 smoke、冻结排序、真实 API 全部成功，但最终 exit 1：E2E 期望 3/5 个文件，页面实际显示 6/9。原因是旧 UI 素材与新准备脚本素材混在共享目录中，产生重复真人文件和第三个错误文件；不是把检索效果失败改成成功。修复为 E2E 逐次创建独立临时资料库，从冻结清单校验所有原始 SHA 后仅复制 3 真人目标，另放 2 个错误素材。保持原断言，不删测试、不放宽门槛；修复后待重新完整验收。
+
+`scripts.verify --real` 在空数据目录实际 exit 1，明确要求冻结样本，不存在 mock/skip 的绿色降级。`prepare_evaluation --archive` 使用由五个授权原始 FLAC 构成的本地 tar 实际取样、逐 SHA 验证，再离线复核成功；在线 HTTPS 下载传输未在本轮再次下载完整 archive。
+
+冷初始化 CLI 显示状态修复：已缓存权重在导入模型库期间原先显示 downloading，现提前识别缓存，实际离线运行输出 loading / 83,316,686 bytes 后 ready，exit 0。权重、架构及推理路径未改变。
+
+许可清单生成成功：55 个 Python 锁条目 / 123 个 npm 锁条目，含平台变体；保存上游许可与 NOTICE。原文本只规范化换行和行末空白，哈希对应原分发文本。源码/权重/素材/外部 FFmpeg 许可分列，不分发依赖二进制或真人音频。
+
+首次远端 CI [40513773269](https://github.com/Xiangyu2141480/voicetrail/actions/runs/40513773269) 对提交 fc8652ab5ccaa5fa0929446ea391930d6a7109b0 实际 completed/success。Ubuntu 24.04 安装 CPU PyTorch 锁、FFmpeg 后运行统一工程入口与全历史扫描；不替代本地真实门槛。
 
 ## 用户验证
 
