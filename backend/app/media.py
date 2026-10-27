@@ -89,7 +89,8 @@ def fingerprint(path: Path) -> dict:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     after = path.stat()
-    identity = lambda st: (st.st_dev, st.st_ino, st.st_size, st.st_mtime_ns)
+    def identity(st):
+        return st.st_dev, st.st_ino, st.st_size, st.st_mtime_ns
     if identity(before) != identity(after):
         raise MediaError("Source changed while being read; retry indexing.")
     return {"device": after.st_dev, "inode": after.st_ino, "size": after.st_size,

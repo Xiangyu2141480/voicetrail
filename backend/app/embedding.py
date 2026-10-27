@@ -83,6 +83,11 @@ class EmbeddingModel:
         self.total_bytes = None
 
     def status(self):
+        if self.state == "downloading":
+            # Hugging Face's partial file is the source of progress, never a timer estimate.
+            download_dir = self.cache_dir / ".cache/huggingface/download"
+            partials = list(download_dir.glob("*.incomplete"))
+            self.downloaded_bytes = sum(p.stat().st_size for p in partials if p.exists())
         return {**asdict(self.info), "status": self.state, "error": self.error,
                 "source": f"https://huggingface.co/{MODEL_ID}/tree/{MODEL_REVISION}",
                 "downloaded_bytes": self.downloaded_bytes, "total_bytes": self.total_bytes}
@@ -102,6 +107,8 @@ class EmbeddingModel:
 
                 name = "embedding_model.ckpt"
                 weight_path = self.cache_dir / name
+                if weight_path.exists():
+                    self.state = "loading"
                 if not weight_path.exists():
                     if offline:
                         raise MediaError("Pinned model is not cached; prepare it online first.")
@@ -114,6 +121,7 @@ class EmbeddingModel:
                     weight_path = Path(cached)
                 self.downloaded_bytes = weight_path.stat().st_size
                 self.total_bytes = self.downloaded_bytes
+                self.state = "loading"
                 expected_hash = "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2"
                 if hashlib.sha256(weight_path.read_bytes()).hexdigest() != expected_hash:
                     raise MediaError("Pinned model checksum mismatch; remove corrupt cache and retry.")

@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "network_connections_blocked": true,
+  "dataset": "LibriSpeech dev-clean",
+  "manifest_sha256": "cbaeeb06e7fcf06dab550a01594abd47079b2d006907158389560f5c07ffd2f1",
+  "device": "cpu",
+  "files": 3,
+  "indexed_segments": 10,
+  "source_duration_seconds": 53.065,
+  "timings": {
+    "cached_start_seconds": 12.571265208069235,
+    "index_seconds": 2.412118375301361,
+    "unchanged_scan_seconds": 0.32877650018781424,
+    "query_2277_seconds": 0.010365166701376438,
+    "query_2035_seconds": 0.009963458869606256
+  },
+  "peak_rss_native_units": 1059815424,
+  "restart_reference_review_export_persisted": true,
+  "queries": [
+    {
+      "speaker": "2277",
+      "results": [
+        {
+          "id": "e892c3203b21479eb233336b6d373a55",
+          "asset_id": "3315a38598f14ee0a3ba3cbbfc7b9762",
+          "source_revision": "25b5792eed5c46baa3891455a228f88c",
+          "source_name": "2277-149897-0005 \u539f\u58f0.flac",
+          "start_ms": 0,
+          "end_ms": 10000,
+          "similarity": 0.7080578207969666,
+          "review_status": "undecided"
+        },
+        {
+          "id": "d9e257d14418496bb41109db955a21c5",
+          "asset_id": "3315a38598f14ee0a3ba3cbbfc7b9762",
+          "source_revision": "25b5792eed5c46baa3891455a228f88c",
+          "source_name": "2277-149897-0005 \u539f\u58f0.flac",
+          "start_ms": 5000,
+          "end_ms": 11465,
+          "similarity": 0.6161305904388428,
+          "review_status": "undecided"
+        },
+        {
+          "id": "6aabbfbfcacc49f889818a285d67a394",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 5000,
+          "end_ms": 15000,
+          "similarity": 0.28719615936279297,
+          "review_status": "undecided"
+        },
+        {
+          "id": "889b5fb18dec4e6cb41bfda990ba0f95",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 10000,
+          "end_ms": 20000,
+          "similarity": 0.26715877652168274,
+          "review_status": "undecided"
+        },
+        {
+          "id": "017063ce28af4f13a0b6af83e431c607",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 0,
+          "end_ms": 10000,
+          "similarity": 0.2213783711194992,
+          "review_status": "undecided"
+        },
+        {
+          "id": "52371ebc70154632b0d189c05eaa531b",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 20000,
+          "end_ms": 24030,
+          "similarity": 0.17920342087745667,
+          "review_status": "undecided"
+        },
+        {
+          "id": "99b8cbb7296a487bbd64e8a040c08578",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 15000,
+          "end_ms": 24030,
+          "similarity": 0.17450672388076782,
+          "review_status": "undecided"
+        },
+        {
+          "id": "c481206ce2fe4e15a3780d0544c93d82",
+          "asset_id": "960dd0c30441402f8b465ef2fa66263e",
+          "source_revision": "df729a98de7741b2af94306595fe2b25",
+          "source_name": "2086-149220-0013 \u539f\u58f0.flac",
+          "start_ms": 10000,
+          "end_ms": 17570,
+          "similarity": 0.05567613244056702,
+          "review_status": "undecided"
+        },
+        {
+          "id": "cfa59fa4055f485fa904285538bfdda2",
+          "asset_id": "960dd0c30441402f8b465ef2fa66263e",
+          "source_revision": "df729a98de7741b2af94306595fe2b25",
+          "source_name": "2086-149220-0013 \u539f\u58f0.flac",
+          "start_ms": 5000,
+          "end_ms": 15000,
+          "similarity": 0.050938546657562256,
+          "review_status": "undecided"
+        },
+        {
+          "id": "c3e5d1c142d6491a87e8906c6c8855e9",
+          "asset_id": "960dd0c30441402f8b465ef2fa66263e",
+          "source_revision": "df729a98de7741b2af94306595fe2b25",
+          "source_name": "2086-149220-0013 \u539f\u58f0.flac",
+          "start_ms": 0,
+          "end_ms": 10000,
+          "similarity": 0.010986625216901302,
+          "review_status": "undecided"
+        }
+      ]
+    },
+    {
+      "speaker": "2035",
+      "results": [
+        {
+          "id": "8dfe4ff4b5ea473786037fd4aa824c08",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 15000,
+          "end_ms": 24030,
+          "similarity": 0.8259698748588562,
+          "review_status": "undecided"
+        },
+        {
+          "id": "83d28534e5b645769b44bf009eb94359",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 10000,
+          "end_ms": 20000,
+          "similarity": 0.7860585451126099,
+          "review_status": "undecided"
+        },
+        {
+          "id": "5b141af8a1ee4f75943af641b305ffe9",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 20000,
+          "end_ms": 24030,
+          "similarity": 0.7709153890609741,
+          "review_status": "undecided"
+        },
+        {
+          "id": "91d72d9108314c9ba83ee214b04c3cc9",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 0,
+          "end_ms": 10000,
+          "similarity": 0.7065569758415222,
+          "review_status": "undecided"
+        },
+        {
+          "id": "b30b77c320e24b919e3db580b41da4d5",
+          "asset_id": "38d3f1899ca44ee9b75ea6c7ff58a614",
+          "source_revision": "ecba14f943ba437697ec2b6fc3c5de78",
+          "source_name": "2035-152373-0005 \u539f\u58f0.flac",
+          "start_ms": 5000,
+          "end_ms": 15000,
+          "similarity": 0.7056503295898438,
+          "review_status": "undecided"
+        },
+        {
+          "id": "2d0d90659a9c451e826f07f2249d4999",
+          "asset_id": "960dd0c30441402f8b465ef2fa66263e",
+          "source_revision": "df729a98de7741b2af94306595fe2b25",
+          "source_name": "2086-149220-0013 \u539f\u58f0.flac",
+          "start_ms": 10000,
+          "end_ms": 17570,
+          "similarity": 0.17932015657424927,
+          "review_status": "undecided"
+        },
+        {
+          "id": "3fb5ecc61bc548c7b5dbaaecb77bee15",
+          "asset_id": "960dd0c30441402f8b465ef2fa66263e",
+          "source_revision": "df729a98de7741b2af94306595fe2b25",
+          "source_name": "2086-149220-0013 \u539f\u58f0.flac",
+          "start_ms": 5000,
+          "end_ms": 15000,
+          "similarity": 0.1586567759513855,
+          "review_status": "undecided"
+        },
+        {
+          "id": "c79bb10c2be34a6d949f205c91624172",
+          "asset_id": "3315a38598f14ee0a3ba3cbbfc7b9762",
+          "source_revision": "25b5792eed5c46baa3891455a228f88c",
+          "source_name": "2277-149897-0005 \u539f\u58f0.flac",
+          "start_ms": 0,
+          "end_ms": 10000,
+          "similarity": 0.1335500180721283,
+          "review_status": "undecided"
+        },
+        {
+          "id": "e6db36fdaa534d32a405e06f773ac7ed",
+          "asset_id": "960dd0c30441402f8b465ef2fa66263e",
+          "source_revision": "df729a98de7741b2af94306595fe2b25",
+          "source_name": "2086-149220-0013 \u539f\u58f0.flac",
+          "start_ms": 0,
+          "end_ms": 10000,
+          "similarity": 0.12295569479465485,
+          "review_status": "undecided"
+        },
+        {
+          "id": "33c08b5ad0814faf82912b35e174f167",
+          "asset_id": "3315a38598f14ee0a3ba3cbbfc7b9762",
+          "source_revision": "25b5792eed5c46baa3891455a228f88c",
+          "source_name": "2277-149897-0005 \u539f\u58f0.flac",
+          "start_ms": 5000,
+          "end_ms": 11465,
+          "similarity": 0.08518163859844208,
+          "review_status": "undecided"
+        }
+      ]
+    }
+  ],
+  "limitations": "Different chapters of five English clean audiobook utterances. Windowed API gate checks the best positive per speaker; the frozen whole-utterance gate remains the stricter release prerequisite."
+}

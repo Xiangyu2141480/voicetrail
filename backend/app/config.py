@@ -11,6 +11,7 @@ PREPROCESSING_VERSION = "pcm16k-vad2-window10-hop5-v1"
 class Settings:
     data_dir: Path
     port: int = 8765
+    dev_ui: bool = False
 
     @classmethod
     def from_env(cls):
@@ -18,7 +19,8 @@ class Settings:
         if os.name != "posix" or not Path("/System/Library").exists():
             default = Path.home() / ".local/share/voicetrail"
         return cls(Path(os.getenv("VOICETRAIL_DATA", str(default))).expanduser().resolve(),
-                   int(os.getenv("VOICETRAIL_PORT", "8765")))
+                   int(os.getenv("VOICETRAIL_PORT", "8765")),
+                   os.getenv("VOICETRAIL_DEV_UI") == "1")
 
     def prepare(self):
         for folder in ("tmp", "references", "exports", "previews", "models"):

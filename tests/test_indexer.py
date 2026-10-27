@@ -1,6 +1,3 @@
-import threading
-from pathlib import Path
-
 import numpy as np
 import pytest
 
@@ -18,6 +15,11 @@ class TestOnlyModel:
 
     def embed_samples(self, audio):
         return np.ones(192, dtype=np.float32) / np.sqrt(192)
+
+    def status(self):
+        from dataclasses import asdict
+        return {**asdict(self.info), "status": "ready", "error": None,
+                "source": "isolated-test-only", "downloaded_bytes": 0, "total_bytes": None}
 
 
 @pytest.fixture
@@ -90,3 +92,13 @@ def test_cancel_never_activates_partial(setup):
     indexer.run(job)
     assert db.get_job(job)["status"] == "cancelled"
     assert not db.all("SELECT * FROM segment")
+
+
+def test_missing_source_invalidates_active_generation(setup):
+    db, indexer, library, source = setup
+    indexer.run(db.enqueue("index", {"library_id": library}))
+    source.unlink()
+    indexer.run(db.enqueue("index", {"library_id": library}))
+    asset = db.one("SELECT * FROM asset")
+    assert asset["status"] == "missing" and asset["active_revision"] is None
+    assert len(db.all("SELECT * FROM segment")) == 1  # Historical provenance is retained.

@@ -6,7 +6,7 @@ import numpy as np
 
 from .db import new_id
 from .embedding import segment_windows
-from .media import MediaError, extract_audio, fingerprint, inspect_media
+from .media import MediaError, extract_audio, fingerprint
 
 EXTENSIONS = {".wav", ".flac", ".mp3", ".m4a", ".aac", ".ogg", ".opus", ".aiff",
               ".mp4", ".mkv", ".mov", ".avi", ".webm", ".m4v", ".wma"}
@@ -17,7 +17,9 @@ def registered_path(db, asset_id):
                    "WHERE a.id=?", (asset_id,))
     if not asset:
         raise MediaError("Registered asset not found.")
-    root = Path(asset["root"]).resolve()
+    root = Path(asset["root"])
+    if root.resolve() != root:
+        raise MediaError("Registered library location changed; register its new location.")
     path = (root / asset["relative_path"]).resolve()
     if not path.is_relative_to(root) or not path.is_file():
         raise MediaError("Source is missing or outside the registered library.")
@@ -37,8 +39,21 @@ class Indexer:
         payload = json.loads(job["payload"])
         library_id = payload["library_id"]
         root = Path(self.db.one("SELECT root FROM library WHERE id=?", (library_id,))["root"])
+        if not root.is_dir() or root.resolve() != root:
+            raise MediaError("Registered directory is missing or changed; register it again.")
         files = sorted(p for p in root.rglob("*") if p.is_file() and p.suffix.lower() in EXTENSIONS
                        and p.resolve().is_relative_to(root.resolve()))
+        present = {str(p.relative_to(root)) for p in files}
+        for asset in self.db.all("SELECT id,relative_path FROM asset WHERE library_id=?",
+                                 (library_id,)):
+            if asset["relative_path"] not in present:
+                self.db.execute("UPDATE asset SET status='missing',active_revision=NULL,"
+                                "error='Source missing; original was not deleted by VoiceTrail.' "
+                                "WHERE id=?", (asset["id"],))
+        for relative in sorted(present):
+            self.db.execute("INSERT INTO asset(id,library_id,relative_path) VALUES(?,?,?) "
+                            "ON CONFLICT(library_id,relative_path) DO NOTHING",
+                            (new_id(), library_id, relative))
         self.db.execute("UPDATE job SET status='running',total=?,processed=0,error=NULL WHERE id=?",
                         (len(files), job_id))
         errors = 0

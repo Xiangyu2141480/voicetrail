@@ -1,14 +1,14 @@
 # 执行断点
 
-- 项目阶段：T01/T02 已真实通过；T03 工程事务实现与回归完成，待 API 下的真实索引。
-- 当前任务：T04 API / T05 导出，实现后接 T06 真浏览器完成 T03 的真实验收。
+- 项目阶段：T01/T02/T04 已真实通过；T03/T05 工程与真实 API 通过，待浏览器取消/中断/播放。
+- 当前任务：T06 真浏览器流程，同时完成 T03/T05 剩余真实验收。
 - 当前状态：RUNNING（仅表示当前会话正在执行）。
 - 最近有效提交：c2ccc53，持久任务/代际索引；87a223c，模型适配器。最新评测证据提交随后落盘，git log 为准。
 - GitHub目标：Xiangyu2141480/voicetrail；gh api user 已返回目标账户；首选仓库未找到。
-- 最近通过的验证：Python 3.11 media/search/embedding contract 8 passed；indexer 5 passed；真实 CPU 模型 smoke；冻结5样本/两查询排序；禁止网络的离线重启/推理；前端 audit 0 vulnerabilities。
-- 未验证：真实持久索引/性能、API访问边界、UI、导出、CI、发布；中文/旧录像/跨年泛化。
+- 最近通过的验证：完整 pytest 23 passed；ruff 通过；真实 CPU API 索引 3 文件/10 片段 2.412s、重扫 0.329s；两查询、WAV 预览/ZIP 解码与重启持久化通过；网络连接明确禁用；前端 typecheck/build 通过。
+- 未验证：真实浏览器播放/错误/强制中断、CI、许可全量清单和发布；中文语音/旧录像/跨年泛化。
 - 阻塞：无外部阻塞。项目依赖只在 .venv；Homebrew 提供缺失的 Python3.11/FFmpeg。无待用户授权事项。
-- 下一条动作：写 T04 API/媒体访问/标注安全回归并实现同源 FastAPI，再 T05 ZIP 导出；之后 React 实际浏览器全链路。
+- 下一条动作：提交已验证 API/导出核心；扫描完整历史并私有备份；用 ego-browser + 可复现 Playwright 做真实流程，检查错误/窄屏并保存证据。
 - 恢复环境：`.venv/bin/python`；依赖锁 `uv.lock`；包管理器 `.bootstrap/bin/uv`；前端 `npm`。
 - 本地资料：VoiceTrail 的应用数据目录 / evaluation 子目录，精确相对资料与标签见 docs/evaluation_manifest.json；实际资料与权重只在本地且不上传。
 - GitHub：认证账户已核验，首选仓库不存在；还未建仓/上传；首次核心闭环后先私有，T08全部门槛满足才公开并发布。

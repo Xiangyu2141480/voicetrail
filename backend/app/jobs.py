@@ -16,7 +16,8 @@ class Worker:
 
     def loop(self):
         while not self.stop_event.is_set():
-            job = self.db.one("SELECT * FROM job WHERE status='queued' ORDER BY created LIMIT 1")
+            job = self.db.one("SELECT * FROM job WHERE status='queued' "
+                              "ORDER BY CASE WHEN kind='model' THEN 0 ELSE 1 END,created LIMIT 1")
             if not job:
                 self.stop_event.wait(.25)
                 continue
