@@ -13,8 +13,8 @@
   },
   "device": "cpu",
   "threads": 4,
-  "elapsed_seconds": 9.70316299982369,
-  "peak_rss_native_units": 1117962240,
+  "elapsed_seconds": 8.61803579190746,
+  "peak_rss_native_units": 1211793408,
   "voiced_seconds": {
     "2277-149896-0032": 9.75,
     "2277-149897-0005": 10.08,

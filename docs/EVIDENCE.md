@@ -56,7 +56,7 @@ ego-lite 0.6.0.12 独立操作生产同源界面：添加目录、索引、上�
 
 2026-10-27/T07：从提交 fc8652a 创建独立干净源码副本，`uv sync --locked --python 3.11` 新建 .venv 并安装 51 个包，`npm ci --prefix frontend` 安装成功且 audit 0 vulnerabilities；`prepare_model --offline` / `prepare_evaluation --offline` 成功。未复用原项目虚拟环境。
 
-首次 `scripts.verify --real`：工程回归 24 passed (6.65s)、ruff/契约/typecheck/build、断网真实 smoke、冻结排序、真实 API 全部成功，但最终 exit 1：E2E 期望 3/5 个文件，页面实际显示 6/9。原因是旧 UI 素材与新准备脚本素材混在共享目录中，产生重复真人文件和第三个错误文件；不是把检索效果失败改成成功。修复为 E2E 逐次创建独立临时资料库，从冻结清单校验所有原始 SHA 后仅复制 3 真人目标，另放 2 个错误素材。保持原断言，不删测试、不放宽门槛；修复后待重新完整验收。
+首次 `scripts.verify --real`：工程回归 24 passed (6.65s)、ruff/契约/typecheck/build、断网真实 smoke、冻结排序、真实 API 全部成功，但最终 exit 1：E2E 期望 3/5 个文件，页面实际显示 6/9。原因是旧 UI 素材与新准备脚本素材混在共享目录中，产生重复真人文件和第三个错误文件；不是把检索效果失败改成成功。修复为 E2E 逐次创建独立临时资料库，从冻结清单校验所有原始 SHA 后仅复制 3 真人目标，另放 2 个错误素材。保持原断言，不删测试、不放宽门槛；重新验收结果如下。
 
 `scripts.verify --real` 在空数据目录实际 exit 1，明确要求冻结样本，不存在 mock/skip 的绿色降级。`prepare_evaluation --archive` 使用由五个授权原始 FLAC 构成的本地 tar 实际取样、逐 SHA 验证，再离线复核成功；在线 HTTPS 下载传输未在本轮再次下载完整 archive。
 
@@ -65,6 +65,10 @@ ego-lite 0.6.0.12 独立操作生产同源界面：添加目录、索引、上�
 许可清单生成成功：55 个 Python 锁条目 / 123 个 npm 锁条目，含平台变体；保存上游许可与 NOTICE。原文本只规范化换行和行末空白，哈希对应原分发文本。源码/权重/素材/外部 FFmpeg 许可分列，不分发依赖二进制或真人音频。
 
 首次远端 CI [40513773269](https://github.com/Xiangyu2141480/voicetrail/actions/runs/40513773269) 对提交 fc8652ab5ccaa5fa0929446ea391930d6a7109b0 实际 completed/success。Ubuntu 24.04 安装 CPU PyTorch 锁、FFmpeg 后运行统一工程入口与全历史扫描；不替代本地真实门槛。
+
+修复提交 0943fa5f46b940d5552b98c45689fdac4c961ab1 再创建第二个干净源码副本与全新 .venv/npm 安装，`prepare_evaluation --offline` 成功；`.venv/bin/python -m scripts.verify --real --report docs/verify_results.json` 实际 exit 0，9 个检查全部通过，总 101.453 秒。工程 24 passed (7.67s)，浏览器 1 passed (测试26.4s / runner27.0s)。冻结两查询分数与初次一致；API 再实测索引1.088秒、重扫0.336秒、查询约0.012秒，峰值RSS1,052,770,304 bytes。冷环境已缓存权重的 smoke 加载43.743秒，说明缓存不意味着各机器/冷初始化都固定为数秒。
+
+最终机器报告为 verify_results.json / retrieval_results.json / api_results.json / e2e_results.json；桌面/窄屏截图人工检查未含私人绝对路径，测试语音未上传。该轮浏览器实际取消/SIGKILL/恢复/回听/ZIP下载后WAV播放/标注跨进程保留均成功。对应修复 CI [40514354263](https://github.com/Xiangyu2141480/voicetrail/actions/runs/40514354263) completed/success。
 
 ## 用户验证
 

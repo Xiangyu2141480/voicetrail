@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "mode": "real",
+  "real_gates_run": true,
+  "checks": [
+    {
+      "name": "offline_engineering",
+      "passed": true
+    },
+    {
+      "name": "ruff",
+      "passed": true
+    },
+    {
+      "name": "http_contract",
+      "passed": true
+    },
+    {
+      "name": "frontend_typecheck",
+      "passed": true
+    },
+    {
+      "name": "frontend_build",
+      "passed": true
+    },
+    {
+      "name": "offline_real_model",
+      "passed": true
+    },
+    {
+      "name": "frozen_retrieval",
+      "passed": true
+    },
+    {
+      "name": "real_api",
+      "passed": true
+    },
+    {
+      "name": "real_browser",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 101.45314699970186,
+  "scope": "Engineering checks cannot substitute for real-model release gates."
+}
