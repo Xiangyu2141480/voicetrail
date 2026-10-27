@@ -1,14 +1,17 @@
 # 执行断点
 
-- 项目阶段：T01 完成；真实权重下载中；T03 工程事务实现与回归完成。
-- 当前任务：T02（下载真实模型）；并行准备不依赖下载的 T03 工程路径。
+- 项目阶段：T01/T02 已真实通过；T03 工程事务实现与回归完成，待 API 下的真实索引。
+- 当前任务：T04 API / T05 导出，实现后接 T06 真浏览器完成 T03 的真实验收。
 - 当前状态：RUNNING（仅表示当前会话正在执行）。
-- 最近有效提交：58ef2f9，启动包/音频提取/冻结评测样本。
+- 最近有效提交：c2ccc53，持久任务/代际索引；87a223c，模型适配器。最新评测证据提交随后落盘，git log 为准。
 - GitHub目标：Xiangyu2141480/voicetrail；gh api user 已返回目标账户；首选仓库未找到。
-- 最近通过的验证：Python 3.11 正式环境：media/search/embedding contract 8 passed；indexer 5 passed；前端 audit 0 vulnerabilities。
-- 未验证：真实模型、检索质量、真实持久索引、UI、发布。
-- 阻塞：无外部阻塞。uv 运行时下载过慢，已取消并改用 Homebrew Python 3.11.18，项目依赖仍只在 .venv。
-- 下一条动作：检查真实模型 smoke 结果，运行冻结评测与离线重启，继续 T04 API 和 T05 导出。
+- 最近通过的验证：Python 3.11 media/search/embedding contract 8 passed；indexer 5 passed；真实 CPU 模型 smoke；冻结5样本/两查询排序；禁止网络的离线重启/推理；前端 audit 0 vulnerabilities。
+- 未验证：真实持久索引/性能、API访问边界、UI、导出、CI、发布；中文/旧录像/跨年泛化。
+- 阻塞：无外部阻塞。项目依赖只在 .venv；Homebrew 提供缺失的 Python3.11/FFmpeg。无待用户授权事项。
+- 下一条动作：写 T04 API/媒体访问/标注安全回归并实现同源 FastAPI，再 T05 ZIP 导出；之后 React 实际浏览器全链路。
+- 恢复环境：`.venv/bin/python`；依赖锁 `uv.lock`；包管理器 `.bootstrap/bin/uv`；前端 `npm`。
+- 本地资料：VoiceTrail 的应用数据目录 / evaluation 子目录，精确相对资料与标签见 docs/evaluation_manifest.json；实际资料与权重只在本地且不上传。
+- GitHub：认证账户已核验，首选仓库不存在；还未建仓/上传；首次核心闭环后先私有，T08全部门槛满足才公开并发布。
 
 ## 每次结束前更新
 

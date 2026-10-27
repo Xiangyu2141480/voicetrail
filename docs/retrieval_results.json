@@ -1,0 +1,85 @@
+{
+  "manifest_sha256": "cbaeeb06e7fcf06dab550a01594abd47079b2d006907158389560f5c07ffd2f1",
+  "model": {
+    "id": "speechbrain/spkrec-ecapa-voxceleb",
+    "revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "preprocessing_version": "pcm16k-vad2-window10-hop5-v1",
+    "dimension": 192,
+    "status": "ready",
+    "error": null,
+    "source": "https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb/tree/0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+    "downloaded_bytes": 83316686,
+    "total_bytes": 83316686
+  },
+  "device": "cpu",
+  "threads": 4,
+  "elapsed_seconds": 9.70316299982369,
+  "peak_rss_native_units": 1117962240,
+  "voiced_seconds": {
+    "2277-149896-0032": 9.75,
+    "2277-149897-0005": 10.08,
+    "2035-152373-0005": 22.619999999999997,
+    "2035-147961-0032": 11.52,
+    "2086-149220-0013": 14.58
+  },
+  "queries": [
+    {
+      "reference_id": "2277-149896-0032",
+      "speaker": "2277",
+      "results": [
+        {
+          "sample_id": "2277-149897-0005",
+          "speaker": "2277",
+          "recording": "149897",
+          "score": 0.7097535729408264,
+          "positive": true
+        },
+        {
+          "sample_id": "2035-152373-0005",
+          "speaker": "2035",
+          "recording": "152373",
+          "score": 0.24847905337810516,
+          "positive": false
+        },
+        {
+          "sample_id": "2086-149220-0013",
+          "speaker": "2086",
+          "recording": "149220",
+          "score": 0.020343858748674393,
+          "positive": false
+        }
+      ],
+      "passed": true
+    },
+    {
+      "reference_id": "2035-147961-0032",
+      "speaker": "2035",
+      "results": [
+        {
+          "sample_id": "2035-152373-0005",
+          "speaker": "2035",
+          "recording": "152373",
+          "score": 0.7760587930679321,
+          "positive": true
+        },
+        {
+          "sample_id": "2086-149220-0013",
+          "speaker": "2086",
+          "recording": "149220",
+          "score": 0.14387699961662292,
+          "positive": false
+        },
+        {
+          "sample_id": "2277-149897-0005",
+          "speaker": "2277",
+          "recording": "149897",
+          "score": 0.12460313737392426,
+          "positive": false
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": "Five English clean audiobook utterances, three speakers, different chapters; no claim of accuracy, cross-age or independent environments."
+}

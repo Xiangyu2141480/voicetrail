@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import threading
 from dataclasses import asdict, dataclass
@@ -113,6 +114,9 @@ class EmbeddingModel:
                     weight_path = Path(cached)
                 self.downloaded_bytes = weight_path.stat().st_size
                 self.total_bytes = self.downloaded_bytes
+                expected_hash = "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2"
+                if hashlib.sha256(weight_path.read_bytes()).hexdigest() != expected_hash:
+                    raise MediaError("Pinned model checksum mismatch; remove corrupt cache and retry.")
                 torch.set_num_threads(4)
                 self.features = Fbank(n_mels=80)
                 self.normalizer = InputNormalization(norm_type="sentence", std_norm=False)

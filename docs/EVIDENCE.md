@@ -19,17 +19,20 @@
 | 2026-10-27/T01 | `npm install` / `npm audit --json` | 前端依赖 | 安装后 0 vulnerabilities；初选 Vite 有漏洞，改为 7.3.7 | frontend/package-lock.json | 还未构建 UI |
 | 2026-10-27/T01–T02 | `.venv/bin/python -m pytest tests/test_media.py tests/test_search.py tests/test_embedding_contract.py -q` | FFmpeg 音频/隔离向量/静音 | exit 0，8 passed | tests / uv.lock | 正式 Python 3.11；不代表真实声音质量 |
 | 2026-10-27/T03 | `.venv/bin/python -m pytest tests/test_indexer.py -q` | 测试专用模型/可控信号 | exit 0，5 passed | tests/test_indexer.py | 验证事务，真实索引待验收 |
+| 2026-10-27/T02 | `.venv/bin/python -m scripts.smoke_model <reference>` | 冻结样本 2277-149896-0032 | exit 0；CPU 实际向量 192维、L2 norm 1.0 | backend/app/embedding.py | 首次准备 70.863s；提取+推理 0.163s；峰值 RSS 711,016,448 bytes |
+| 2026-10-27/T02 | `.venv/bin/python -m scripts.evaluate_retrieval --dataset <evaluation>` | 冻结的5个样本/3说话人/不同章节 | exit 0；两位已知人的不同录制正例均高于全部负例 | docs/evaluation_manifest.json / docs/retrieval_results.json | 9.703s；峰值 RSS 1,117,962,240 bytes；小样本，不报告泛化准确率 |
+| 2026-10-27/T02 | `HF_HUB_OFFLINE=1 .venv/bin/python -m scripts.smoke_model --offline <reference>` | 冻结 reference；socket.connect/create_connection 明确抛错 | exit 0；实际模型缓存重启、192维/归一化向量；network_connections_blocked=true | scripts/smoke_model.py | load 2.690s，提取+推理0.152s，峰值 RSS710,705,152 bytes |
 
 ## 真实声音检索
 
-- 样本来源及许可：待核验；私人路径不写进提交文件。
-- 说话人数、录制次数、语言、噪声和年代：待实测。
-- 参考与检索样本是否不同录制：待核验。
-- 已知匹配、未知负例及人工标注方法：待核验。
-- 冻结样本清单、两位已知人分别查询的全部逐例分数、正例是否优于全部明确负例：未验证。这是技术预览公开门槛，不是泛化准确率。
+- 样本来源及许可：LibriSpeech dev-clean，OpenSLR 官方标注 CC BY 4.0，精确 ID 与哈希见冻结清单。
+- 说话人数、录制次数、语言、噪声和年代：3 位说话人，5 个章节音频片段，英语有声书 clean 子集；录制年代未核验。
+- 参考与检索样本是否不同录制：同人不同 chapter ID，非同一录音复制裁切；独立环境/跨年不成立。
+- 已知匹配、未知负例及人工标注方法：官方 speaker/chapter IDs；2277/2035 为已知，2086 为未知；无人工身份确认。
+- 冻结清单 SHA cbaeeb06e7fcf06dab550a01594abd47079b2d006907158389560f5c07ffd2f1；两查询的全量逐例分数见 retrieval_results.json。2277 正例0.709754，负例0.248479/0.020344；2035 正例0.776059，负例0.143877/0.124603，最低排序门槛通过。这不是泛化准确率，实际分窗 UI 搜索仍待验证。
 - 候选排序、误检、漏检：未验证；未经完整标注不报准确率/召回率。
-- 首次下载与处理耗时、每小时素材建库耗时、峰值内存、索引大小：待实测。
-- 缓存后离线重启：未验证。
+- 首次权重83,316,686 bytes（约79.5 MiB），准备70.863s；其他建库性能待实测。
+- 缓存后离线重启：通过，smoke 明确阻断所有 socket 网络连接；本地固定 revision 权重 SHA256 校验后加载。
 
 ## 真实UI与导出
 
