@@ -1,0 +1,28 @@
+[project]
+name = "voicetrail"
+version = "0.1.0a1"
+description = "Local reference-voice similarity search for your media library"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "fastapi==0.119.1",
+  "uvicorn==0.38.0",
+  "numpy==2.2.6",
+  "python-multipart==0.0.20",
+  "speechbrain==1.0.3",
+  "torch==2.8.0",
+  "torchaudio==2.8.0",
+  "huggingface-hub==0.36.0",
+  "soundfile==0.13.1",
+  "webrtcvad-wheels==2.0.14",
+]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "httpx==0.28.1", "ruff==0.14.2"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["real: requires cached real model and licensed audio"]
+
+[tool.ruff]
+line-length = 100

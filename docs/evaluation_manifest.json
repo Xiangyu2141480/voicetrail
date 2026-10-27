@@ -1,0 +1,60 @@
+{
+  "dataset": "LibriSpeech dev-clean",
+  "source": "https://www.openslr.org/12/",
+  "archive_mirror": "https://huggingface.co/datasets/k2-fsa/LibriSpeech",
+  "archive_revision": "2dd4206a992cd7a475e1ce2e82b708b014319152",
+  "license": "CC-BY-4.0",
+  "selection": "First archive-order FLAC of 10\u201330 seconds in each predefined chapter. Original reference chapter 2035/147960 has no 10s utterance; selected 147961 before embeddings. Chapter IDs denote distinct chapter recordings, not independent environments.",
+  "known_speakers": [
+    "2277",
+    "2035"
+  ],
+  "unknown_speaker": "2086",
+  "samples": [
+    {
+      "id": "2277-149896-0032",
+      "speaker": "2277",
+      "recording": "149896",
+      "role": "reference",
+      "path": "references/2277-149896-0032.flac",
+      "duration_seconds": 10.77,
+      "sha256": "56b640a079f27f9473478a20f068b8bd8af3afa7030d7a07cbbc7b3f19211689"
+    },
+    {
+      "id": "2277-149897-0005",
+      "speaker": "2277",
+      "recording": "149897",
+      "role": "target",
+      "path": "library/2277-149897-0005.flac",
+      "duration_seconds": 11.465,
+      "sha256": "61a532c7d431449bfc8d5ed7573007007abd3407d1a16254762ae50f5c9fe56d"
+    },
+    {
+      "id": "2035-152373-0005",
+      "speaker": "2035",
+      "recording": "152373",
+      "role": "target",
+      "path": "library/2035-152373-0005.flac",
+      "duration_seconds": 24.03,
+      "sha256": "2678f3763a53fddda4d39fcf946ce2f4304b14f0f26ce2691eb6f16dacf66212"
+    },
+    {
+      "id": "2035-147961-0032",
+      "speaker": "2035",
+      "recording": "147961",
+      "role": "reference",
+      "path": "references/2035-147961-0032.flac",
+      "duration_seconds": 13.86,
+      "sha256": "6f500251ad6d380da26e737e3b8991458f19ae8506b308765021b358d486bd15"
+    },
+    {
+      "id": "2086-149220-0013",
+      "speaker": "2086",
+      "recording": "149220",
+      "role": "target",
+      "path": "library/2086-149220-0013.flac",
+      "duration_seconds": 17.57,
+      "sha256": "4ec0fc999278de1051ab5938169a1dc89f709ff174107f3005027417662756c4"
+    }
+  ]
+}
