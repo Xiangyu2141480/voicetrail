@@ -107,11 +107,11 @@ class Indexer:
                                        np.asarray(vector, dtype="<f4").tobytes()))
                         c.execute("UPDATE asset SET active_revision=?,status='completed',error=NULL "
                                   "WHERE id=?", (revision, asset["id"]))
-            except (MediaError, OSError):
+            except (MediaError, OSError) as exc:
                 errors += 1
                 self.db.execute("UPDATE asset SET status='failed',error=? WHERE id=?",
-                                ("File unreadable, changed, has no audio or insufficient speech; "
-                                 "check source and retry.", asset["id"]))
+                                (str(exc) if isinstance(exc, MediaError) else
+                                 "Source is unavailable; check it and retry.", asset["id"]))
             finally:
                 normalized.unlink(missing_ok=True)
             self.db.execute("UPDATE job SET processed=? WHERE id=?", (processed, job_id))

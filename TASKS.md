@@ -6,12 +6,12 @@
 |---|---|---|---|---|
 | T01 | DONE | 项目环境与真实音频提取 | 无 | docs/EVIDENCE.md；Python 3.11 正式回归通过；58ef2f9 与环境锁提交 |
 | T02 | DONE | 真实模型、样音与相似检索最短链路 | T01 | docs/retrieval_results.json；两位不同录制正例均高于全部负例；阻断网络离线 smoke 通过；87a223c 与评测提交 |
-| T03 | DOING | 持久索引、增量更新、取消与恢复 | T01/T02 | 6 项事务回归；真实 3 文件/10 片段索引、无变化重扫和重启通过；待真实取消/强制中断 |
-| T04 | DONE | API、原位置预览与人工标注 | T02/T03 | 5 项 API 行为回归；docs/api_results.json 真实查询/预览与标注重启通过；API 核心提交见 git log |
-| T05 | DOING | 原声ZIP导出及来源清单 | T04 | 4 项边界/哈希/失败/取消回归；真实 ZIP 解码和重启通过；待浏览器播放 |
-| T06 | DOING | 实际浏览器完整流程 | T04/T05 | React 已接真实 API；typecheck/生产 build 通过；待浏览器全链路 |
-| T07 | TODO | 文档、许可、性能与可复现检查 | T02–T06 | 待填 |
-| T08 | TODO | 个人仓库上传、CI与技术预览发布 | T01–T07 | 待填 |
+| T03 | DONE | 持久索引、增量更新、取消与恢复 | T01/T02 | 7 项事务/错误回归；真实索引与重扫；Playwright 实际取消、SIGKILL 中断后重试通过；72ebe43 与 UI 验收提交 |
+| T04 | DONE | API、原位置预览与人工标注 | T02/T03 | 5 项 API 行为回归；docs/api_results.json 真实查询/预览与标注重启通过；72ebe43 |
+| T05 | DONE | 原声ZIP导出及来源清单 | T04 | 4 项边界/哈希/失败/取消回归；真实 ZIP 解码、浏览器下载 WAV 播放、重启通过；72ebe43 与 UI 验收提交 |
+| T06 | DONE | 实际浏览器完整流程 | T04/T05 | ego_results.json 与 e2e_results.json；真实完整流程/错误/390px/键盘/重启通过；typecheck/build；UI 验收提交见 git log |
+| T07 | DOING | 文档、许可、性能与可复现检查 | T02–T06 | 性能已有 api_results.json；待 README/LICENSE/全依赖清单/统一 verify/干净环境 |
+| T08 | DOING | 个人仓库上传、CI与技术预览发布 | T01–T07 | 已创建个人私有仓库并推送 72ebe43，远端 SHA 实际对照相符；待最终历史复核/CI/公开门槛 |
 
 缺模型或样本时，模型效果验收标BLOCKED；仍可用明确的测试替身实现纯工程路径，但不得将T02实际验收和公开发布门槛标DONE。依赖条件按需要区分实现依赖与真实验证依赖。
 

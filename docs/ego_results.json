@@ -1,0 +1,19 @@
+{
+  "browser": "ego-lite 0.6.0.12",
+  "real_model": true,
+  "import_index_reference_search_review_export_download": true,
+  "preview_playback": {
+    "duration": 10,
+    "currentTime": 0.341991,
+    "readyState": 4,
+    "error": null
+  },
+  "download_succeeded": true,
+  "limitations": "Playback verified through decoded browser media/currentTime; no human identity review.",
+  "export_playback": {
+    "duration": 10,
+    "currentTime": 0.350696,
+    "readyState": 4,
+    "error": null
+  }
+}

@@ -42,7 +42,15 @@ API 工程与真实验收：23 项 pytest 通过；ruff 通过。最初 T04/T05 
 
 真实 API 下 WAV 预览与 ZIP 内 WAV 均可解码、时间范围误差 <=100ms；新建应用实例/重新加载真实模型后，两个参考、候选稳定 ID、confirmed 标注和 ZIP 下载仍有效。该过程通过 TestClient 调用真实模型，尚不等于真实浏览器播放。
 
-React 已接真实 API；`npm run build` exit 0，同时 typecheck 通过。实际浏览器导入、回听、下载播放、强制中断与恢复：待验证。
+React 已接真实 API；`npm run build` exit 0，同时 typecheck 通过。
+
+`npm run e2e`（配置冻结 evaluation 和模型缓存）最新 exit 0：1 passed (24.6s)，Chromium 141.0.7390.37，固定真实模型。完整 UI 导入 3 个真人文件 + 无音轨/损坏错误素材，实际取消索引、索引运行时 SIGKILL 服务、重启读回 interrupted 并显式重试；3/5 完成，2 个错误原因可读。短 2 秒参考、5 秒静音、无音轨参考均显示真实错误；参考与命中目标来自不同章节录制，不是自匹配。
+
+浏览器首个真人候选原声和下载 ZIP 中解包的真实 WAV 均 duration=10 秒、readyState=4、currentTime>0.2 秒、media error=null。confirmed/rejected 标注和 ZIP 在新服务进程后保留，390px 无横向溢出、键盘 Enter 可检索、JavaScript errors=[]。具体结果见 e2e_results.json，截图 ui-desktop.png / ui-mobile.png。这验证解码/播放，不声称人类身份审听完成。
+
+ego-lite 0.6.0.12 独立操作生产同源界面：添加目录、索引、上传真人参考、检索、回听、确认、选择、导出下载、解包后在真实浏览器播放 WAV 全部完成；结果 ego_results.json / ego-desktop.png。任务空间验收后已关闭；未升级浏览器。
+
+发现并修复：最初 Playwright 未识别项目外测试文件的 ESM，exit 1；给 tests/e2e 明确 type=module 并指向项目安装的入口后，完整测试通过，未删断言。文件索引最初丢失具体 MediaError，新增“无音轨应显示具体原因”回归实际先失败，再保留安全错误文字修复；indexer 7 passed，随后真实 E2E 再通过。
 
 ## 用户验证
 

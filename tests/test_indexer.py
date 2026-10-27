@@ -102,3 +102,14 @@ def test_missing_source_invalidates_active_generation(setup):
     asset = db.one("SELECT * FROM asset")
     assert asset["status"] == "missing" and asset["active_revision"] is None
     assert len(db.all("SELECT * FROM segment")) == 1  # Historical provenance is retained.
+
+
+def test_failed_file_reports_specific_safe_error(setup):
+    db, indexer, library, source = setup
+    video = source.parent / "no-audio.mp4"
+    generate(video, "-f", "lavfi", "-i", "color=size=32x32:duration=1", "-an")
+    indexer.run(db.enqueue("index", {"library_id": library}))
+    asset = db.one("SELECT * FROM asset WHERE relative_path='no-audio.mp4'")
+    assert asset["status"] == "failed"
+    assert asset["error"] == "This file has no audio track."
+    assert str(source.parent) not in asset["error"]

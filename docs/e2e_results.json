@@ -1,0 +1,46 @@
+{
+  "browser": "chromium",
+  "browser_version": "141.0.7390.37",
+  "real_model": true,
+  "model_revision": "0f99f2d0ebe89ac095bcc5903c4dd8f72b367286",
+  "cancel_and_forced_restart_recovery": true,
+  "short_silence_no_audio_errors": true,
+  "original_preview_playback": {
+    "duration": 10,
+    "currentTime": 0.277216,
+    "readyState": 4,
+    "error": null
+  },
+  "export_playback": {
+    "duration": 10,
+    "readyState": 4,
+    "currentTime": 0.340722,
+    "error": null
+  },
+  "export_manifest": {
+    "format_version": 1,
+    "clips": [
+      {
+        "id": "e944c9760f394a98bc8939f7cb3b97e3",
+        "similarity": 0.7080578207969666,
+        "review_status": "confirmed",
+        "asset_id": "0074cd6548d54ded8745faf49a6ad436",
+        "source_revision": "7d987b644d4d41fc8ae61ebb099cc078",
+        "start_ms": 0,
+        "end_ms": 10000,
+        "source_name": "2277-149897-0005 中文 空格.flac",
+        "export_file": "clip-001.wav",
+        "source_sha256": "61a532c7d431449bfc8d5ed7573007007abd3407d1a16254762ae50f5c9fe56d",
+        "sample_rate": 16000,
+        "channels": 1,
+        "encoding": "PCM_S16LE",
+        "duration_ms": 10000
+      }
+    ]
+  },
+  "restart_persistence": true,
+  "narrow_viewport_width": 390,
+  "keyboard_search": true,
+  "passed": true,
+  "javascript_errors": []
+}
